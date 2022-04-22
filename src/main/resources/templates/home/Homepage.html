@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+<body>
+<!--header-->
+<div th:replace="fragments/header :: headerAuthenticated"></div>
+
+
+<main>
+    <!--hero-->
+    <section
+            class="
+          d-flex
+          flex-column
+          banner
+          justify-content-center
+          align-items-center
+        "
+    >
+        <h1 class="display-1 fw-bold text-light">Paradise Burger</h1>
+        <div class="col-lg-6">
+
+
+        </div>
+    </section>
+
+    <div class="bg-warning">
+        <p class="text-center lead fw-bold text-light">Divine Comfort Foods</p>
+    </div>
+
+    <!--menu section-->
+    <section>
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="text-center display-5 fw-normal">Menu</h2>
+            <div class="mt-5">
+                <h3>Grilled Burgers</h3>
+                <div class="row">
+                    <div class="col-sm-4 mt-2">
+                        <a class="card text-white h-100 bg-dark rounded-5 shadow-lg"
+                                style="background-image: url('/classicburger.jpg'); background-size: 300px 300px;" th:href="@{~/product/add}">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold"> Bacon Burger P150</h2>
+
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-4 mt-2">
+                        <a
+                                class="card text-white h-100 bg-dark rounded-5 shadow-lg"
+                                style="background-image: url('/baconburger.jpeg'); background-size: 300px 300px;" th:href="@{~/product/add}">
+
+                            <div
+                                    class="
+                      d-flex
+                      flex-column
+                      h-100
+                      p-5
+                      pb-3
+                      text-white text-shadow-1
+                    "
+                            >
+                                <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Cheesy Burger P145</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 mt-2">
+                        <a
+                                class="card text-white h-100 bg-dark rounded-5 shadow-lg"
+                                style="background-image: url('/cheesyburger.jpg'); background-size: 300px 300px;" th:href="@{~/product/add}">
+
+                            <div
+                                    class="
+                      d-flex
+                      flex-column
+                      h-100
+                      p-5
+                      pb-3
+                      text-white text-shadow-1
+                    "
+                            >
+                                <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Giant Burgrer P170</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 mt-2">
+                        <a
+                                class="card text-white h-100 bg-dark rounded-5 shadow-lg"
+                                style="background-image: url('/giantburgrer.jpg'); background-size: 300px 300px;"th:href="@{~/product/add}">
+
+                            <div
+                                    class="
+                      d-flex
+                      flex-column
+                      h-100
+                      p-5
+                      pb-3
+                      text-white text-shadow-1
+                    "
+                            >
+                                <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">
+                                    Classic Burger P166
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 mt-2">
+                        <a
+                                class="card text-white h-100 bg-dark rounded-5 shadow-lg"
+                                style="background-image: url('/spicyburger.jpg'); background-size: 300px 300px;"th:href="@{~/product/add}">
+
+                            <div
+                                    class="
+                      d-flex
+                      flex-column
+                      h-100
+                      p-5
+                      pb-3
+                      text-white text-shadow-1
+                    "
+                            >
+                                <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Spicy Burger P155</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 mt-2">
+                        <a
+                                class="card text-white h-100 bg-dark rounded-5 shadow-lg"
+                                style="background-image: url('/blackburger.jpg'); background-size: 300px 300px;"th:href="@{~/product/add}">
+
+                            <div
+                                    class="
+                      d-flex
+                      flex-column
+                      h-100
+                      p-5
+                      pb-3
+                      text-white text-shadow-1
+                    "
+                            >
+                                <h2 class="pt-5 mt-5 mb-4 lh-1 fw-bold">Black Burger P134</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -31,9 +31,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .antMatchers("/", "/login*", "/register*")
                 .anonymous()
             // Here, we are allowing access to user pages to the admin role only
-            //.antMatchers("/user*").hasRole("ADMIN")
+            .antMatchers("/user*").hasRole("ADMIN")
             // Here, we are allowing access to product pages to the admin and employee roles only
-            //.antMatchers("/product*").hasAnyRole("ADMIN", "EMPLOYEE")
+            .antMatchers("/product*").hasAnyRole("ADMIN", "EMPLOYEE")
             // Any other requests should be authenticated
             .anyRequest()
                 .authenticated()

@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("register")
 public class RegistrationController {
 
-    private static final String CUSTOMER_ROLE = "ROLE_CUSTOMER";
+
+    private static final String ADMIN_ROLE = "ROLE_ADMIN";
 
     @Autowired
     private UserService userService;
@@ -26,9 +27,10 @@ public class RegistrationController {
 
     @PostMapping
     private String register(UserDTO userDTO, Model model) {
-        userDTO.setRole(CUSTOMER_ROLE);
+        userDTO.setRole(ADMIN_ROLE);
         userService.add(userDTO);
         return "redirect:/login";
     }
+
 
 }
